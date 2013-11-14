@@ -11,9 +11,23 @@
 @interface AttributorViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *body;
 @property (weak, nonatomic) IBOutlet UILabel *headline;
+@property (weak, nonatomic) IBOutlet UIButton *outlineButton;
 @end
 
 @implementation AttributorViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // make the title of the button outlined and set the color to be the global tint color
+    NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:self.outlineButton.currentTitle];
+    [title setAttributes:@{ NSStrokeWidthAttributeName : @3,
+                            NSStrokeColorAttributeName : self.outlineButton.tintColor }
+                   range:NSMakeRange(0, [title length])];
+    [self.outlineButton setAttributedTitle:title
+                                  forState:UIControlStateNormal];
+}
 
 - (IBAction)changeBodySelectionColorToMatchBackgroundOfButton:(UIButton *)sender {
     [self.body.textStorage addAttribute:NSForegroundColorAttributeName
@@ -32,16 +46,10 @@
                                      range:self.body.selectedRange];
 }
 
-- (void)viewDidLoad
+- (void)didReceiveMemoryWarning
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-
-//- (void)didReceiveMemoryWarning
-//{
-//    [super didReceiveMemoryWarning];
-//    // Dispose of any resources that can be recreated.
-//}
 
 @end
