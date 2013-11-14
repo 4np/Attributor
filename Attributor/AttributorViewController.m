@@ -21,6 +21,17 @@
                                   range:self.body.selectedRange];
 }
 
+- (IBAction)outlineBodySelection {
+    [self.body.textStorage addAttributes:@{ NSStrokeWidthAttributeName : @-3,
+                                            NSStrokeColorAttributeName : [UIColor blackColor] }
+                                   range:self.body.selectedRange];
+}
+
+- (IBAction)unOutlineBodySelection {
+    [self.body.textStorage removeAttribute:NSStrokeWidthAttributeName
+                                     range:self.body.selectedRange];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
