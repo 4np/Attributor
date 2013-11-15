@@ -7,6 +7,15 @@ This code covers the _Attributor_ project from Lecture 5.
 ## UI
 Note that I have developed this with 4" screen (iPhone 5 & 5S) in mind. Running this on a 3.5" screen or simulator may result in los of UI.
 
+## Versions
+The code has been tagged in different versions to represent the different stages of development and progressing through the Lectures, Slides and Assignments. The _Lecture_ tags are probably good starting points for starting with assignments. From bottom (oldest) to top (most recent) the different stages of development are tagged:
+
+Tag              | What
+---------------- | ---
+[0.1](https://github.com/4np/Attributor/releases/tag/0.1)    | The code from the end of Lecture 5: View Controller Lifecycle
+
+This way you can _download_ or _check out_ each stage of development, for example the stage _before_ I add my solution of the assignments, and implement your own solution.
+
 ## License
 
    **Copyright 2013 Jeroen Wesbeek**
