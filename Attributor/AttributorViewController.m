@@ -22,11 +22,46 @@
     
     // make the title of the button outlined and set the color to be the global tint color
     NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:self.outlineButton.currentTitle];
-    [title setAttributes:@{ NSStrokeWidthAttributeName : @3,
+    [title setAttributes:@{ NSStrokeWidthAttributeName : @3, // outline without fill
                             NSStrokeColorAttributeName : self.outlineButton.tintColor }
                    range:NSMakeRange(0, [title length])];
     [self.outlineButton setAttributedTitle:title
                                   forState:UIControlStateNormal];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // sync up with possible font changes that happened
+    // while we were off-screen
+    [self usePreferredFonts];
+    
+    // sign up with notification center to receive messages
+    [[NSNotificationCenter defaultCenter] addObserver:self                                          // we are the observer
+                                             selector:@selector(preferredFontsChanged:)             // our method to trigger
+                                                 name:UIContentSizeCategoryDidChangeNotification    // notification to listen for
+                                               object:nil];                                         // don't need the sender
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    // stop listening for notifications
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIContentSizeCategoryDidChangeNotification
+                                                  object:nil];
+    
+}
+
+- (void)preferredFontsChanged:(NSNotification *)notification {
+    [self usePreferredFonts];
+}
+
+- (void)usePreferredFonts {
+    self.body.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    self.headline.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
 }
 
 - (IBAction)changeBodySelectionColorToMatchBackgroundOfButton:(UIButton *)sender {
@@ -36,7 +71,7 @@
 }
 
 - (IBAction)outlineBodySelection {
-    [self.body.textStorage addAttributes:@{ NSStrokeWidthAttributeName : @-3,
+    [self.body.textStorage addAttributes:@{ NSStrokeWidthAttributeName : @-3, // outline with fill
                                             NSStrokeColorAttributeName : [UIColor blackColor] }
                                    range:self.body.selectedRange];
 }
