@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ykO-AX-0F7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Attributor View Controller-->
+        <!--Attributor View Controller - CS139p Rocks!-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="AttributorViewController" sceneMemberID="viewController">
@@ -16,12 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRE-Zq-y8Y">
-                                <rect key="frame" x="20" y="49" width="280" height="389"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRE-Zq-y8Y">
+                                <rect key="frame" x="20" y="72" width="280" height="361"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis purus risus, posuere sed tristique id, tempus dictum ante. Donec in vestibulum ligula. Fusce hendrerit massa est, vitae tincidunt tellus euismod eu. Suspendisse dignissim est sit amet metus consequat blandit. Aenean enim urna, viverra at commodo ut, gravida vitae turpis. Nunc imperdiet condimentum libero, vel euismod ipsum tempus ac. Aenean iaculis massa at metus cursus consequat. Curabitur in eleifend ante. Vivamus ut nisi dolor. Praesent feugiat, augue tempus commodo egestas, sem diam pellentesque metus, ac gravida orci massa sit amet mauris. Nullam vitae hendrerit nisi, at dictum ante. Donec erat risus, tristique ac libero vitae, venenatis sodales tellus.
+
+Morbi id ipsum sollicitudin eros accumsan condimentum. Nunc quis mattis felis. Donec molestie bibendum semper. Praesent malesuada erat a dapibus condimentum. Nam semper velit sit amet velit posuere laoreet. Nulla sollicitudin venenatis dolor eget bibendum. Proin dictum augue vel mi suscipit accumsan. Donec ac consectetur neque, in porta neque. Aliquam nec massa leo. Aliquam et vehicula nulla. Phasellus euismod semper arcu ut vestibulum. Maecenas mauris nunc, scelerisque rhoncus sapien nec, interdum imperdiet ipsum. Aliquam massa nunc, sodales vitae est ut, suscipit sollicitudin arcu. Praesent pretium porta leo, vel dictum turpis ultrices at. Aliquam sodales diam a nibh rutrum placerat.
+
+Quisque euismod, magna non faucibus facilisis, ipsum turpis tristique ipsum, nec rutrum purus ante id ligula. Etiam feugiat lectus non ligula pulvinar malesuada. Praesent sodales odio turpis, sit amet molestie magna tincidunt vitae. Sed aliquam, nisi quis scelerisque varius, enim sem dapibus libero, eu malesuada purus odio sed lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eget elementum magna. Nulla interdum dui justo, vel ultrices sem suscipit nec. Suspendisse lobortis faucibus risus, a consequat ligula feugiat vitae. Phasellus tincidunt, leo ac aliquet scelerisque, erat arcu ornare tortor, sed facilisis urna risus eu diam. Praesent nec risus nunc. Sed dignissim metus sed ullamcorper congue. Quisque eleifend, diam id faucibus aliquet, arcu turpis elementum nunc, a suscipit arcu ligula vehicula diam. In blandit mauris non dapibus dictum. In hac habitasse platea dictumst.
+
+Vestibulum id pulvinar nisi. Nulla facilisi. Fusce interdum nulla vitae nisi dignissim commodo. Integer tempus dolor nisi, ut sagittis est sagittis vel. Fusce interdum vehicula dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam diam est, tristique eget pharetra et, iaculis sed nibh. Aliquam quis urna sit amet risus lacinia aliquet sed sit amet augue. Praesent quis orci sit amet diam placerat sodales a in augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna magna, adipiscing ac iaculis et, hendrerit quis erat.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Ut ut velit quam. Nam feugiat tellus nulla, non ultricies neque cursus eleifend. Suspendisse eu sodales nisl, sit amet eleifend leo. Integer accumsan augue tempor, placerat mauris nec, feugiat lectus. Morbi vehicula ante venenatis metus convallis ultrices. Phasellus aliquet id nibh quis pellentesque. Maecenas nec feugiat erat. Fusce at felis mi. Fusce tempus lobortis lorem non porttitor. Aliquam egestas, augue placerat venenatis dapibus, erat diam ullamcorper lacus, a mollis metus risus nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra in nulla eu venenatis. Vivamus adipiscing, ligula et egestas tempus, eros odio aliquet dolor, sit amet cursus quam nulla vitae leo. Phasellus luctus neque sit amet felis porttitor auctor. Phasellus in mi ac odio bibendum ullamcorper id dignissim arcu. Cras sit amet ligula sapien.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gR-Tm-ecg">
@@ -93,24 +115,81 @@
                                     <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CMD-YN-zoE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CS139P Rocks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRa-YP-dA9">
-                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CS139p Rocks!" id="IBe-fX-rtD">
+                        <barButtonItem key="rightBarButtonItem" title="Stats" id="Zbs-Nk-LRw">
+                            <connections>
+                                <segue destination="P8V-ZN-mEp" kind="push" identifier="Analyze Text" id="7qL-3W-MBI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="body" destination="jRE-Zq-y8Y" id="Zjg-mE-a1M"/>
+                        <outlet property="outlineButton" destination="4gR-Tm-ecg" id="jc0-xR-8J8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="99"/>
+        </scene>
+        <!--Text Stats View Controller-->
+        <scene sceneID="3mR-3e-nIP">
+            <objects>
+                <viewController id="P8V-ZN-mEp" customClass="TextStatsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hbL-5G-wZf"/>
+                        <viewControllerLayoutGuide type="bottom" id="J1i-nN-HMe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7lh-po-coZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 colorful characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-Gj-4ye">
+                                <rect key="frame" x="20" y="70" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 outlined characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL3-Eo-cTb">
+                                <rect key="frame" x="20" y="99" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ds9-ZI-NQ0"/>
                     <connections>
-                        <outlet property="body" destination="jRE-Zq-y8Y" id="Zjg-mE-a1M"/>
-                        <outlet property="headline" destination="CRa-YP-dA9" id="qWK-GJ-m9U"/>
-                        <outlet property="outlineButton" destination="4gR-Tm-ecg" id="jc0-xR-8J8"/>
+                        <outlet property="colorfulChararactersLabel" destination="xKg-Gj-4ye" id="H3s-nl-YK6"/>
+                        <outlet property="outlinedCharactersLabel" destination="JL3-Eo-cTb" id="f9s-2w-jlG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wez-Ex-8Uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1318" y="99"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3eL-Cj-wFq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ykO-AX-0F7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LS4-Oa-c7R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="MmU-N2-Q1d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDv-ea-JKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="99"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

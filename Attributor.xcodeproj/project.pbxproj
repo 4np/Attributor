@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904501B71837AFFA0034A6B1 /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904501B61837AFFA0034A6B1 /* TextStatsViewController.m */; };
 		909311F21835808B006821D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909311F11835808B006821D5 /* Foundation.framework */; };
 		909311F41835808B006821D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909311F31835808B006821D5 /* CoreGraphics.framework */; };
 		909311F61835808B006821D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909311F51835808B006821D5 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		904501B51837AFFA0034A6B1 /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		904501B61837AFFA0034A6B1 /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 		909311EE1835808B006821D5 /* Attributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attributor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909311F11835808B006821D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		909311F31835808B006821D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 				909312001835808B006821D5 /* AttributorAppDelegate.h */,
 				909312011835808B006821D5 /* AttributorAppDelegate.m */,
 				909312031835808B006821D5 /* Main.storyboard */,
+				904501B51837AFFA0034A6B1 /* TextStatsViewController.h */,
+				904501B61837AFFA0034A6B1 /* TextStatsViewController.m */,
 				909312061835808B006821D5 /* AttributorViewController.h */,
 				909312071835808B006821D5 /* AttributorViewController.m */,
 				909312091835808B006821D5 /* Images.xcassets */,
@@ -200,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = MyCompany;
 				TargetAttributes = {
+					909311ED1835808B006821D5 = {
+						DevelopmentTeam = USQSAZ85Q4;
+					};
 					9093120E1835808B006821D5 = {
 						TestTargetID = 909311ED1835808B006821D5;
 					};
@@ -253,6 +261,7 @@
 				909312021835808B006821D5 /* AttributorAppDelegate.m in Sources */,
 				909312081835808B006821D5 /* AttributorViewController.m in Sources */,
 				909311FE1835808B006821D5 /* main.m in Sources */,
+				904501B71837AFFA0034A6B1 /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +388,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Attributor/Attributor-Prefix.pch";
 				INFOPLIST_FILE = "Attributor/Attributor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +404,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Attributor/Attributor-Prefix.pch";
 				INFOPLIST_FILE = "Attributor/Attributor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +476,7 @@
 				909312221835808B006821D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		909312231835808B006821D5 /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +485,7 @@
 				909312251835808B006821D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
